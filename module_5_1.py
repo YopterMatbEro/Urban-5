@@ -9,10 +9,18 @@ class House:
         else:
             [print(i) for i in range(1, new_floor + 1)]
 
+    def __len__(self):
+        return self.number_of_floors
 
-lastochka = House("ЖК Ласточка", 5)
+    def __str__(self):
+        return f'Название: {self.name}, кол-во этажей: {self.number_of_floors}'
 
-lastochka.goto(5)
-lastochka.goto(10)
-lastochka.goto(4)
-lastochka.goto(0)
+
+if __name__ == '__main__':
+    # Данные для первого задания. Вынес, чтобы при импорте не обрабатывались
+    lastochka = House("ЖК Ласточка", 5)
+
+    lastochka.goto(5)
+    lastochka.goto(10)
+    lastochka.goto(4)
+    lastochka.goto(0)
