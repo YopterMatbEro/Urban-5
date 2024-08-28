@@ -14,3 +14,6 @@
 
 4. [Четвертое задание](module_5_4.py)
 + [Всё тот же измененный класс House](module_5_1.py)
+---
+
+5. [HAAAARD](module_5_hard.py)
