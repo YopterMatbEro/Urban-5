@@ -60,7 +60,7 @@ class UrTube:
                 print('Видео добавлено!')
 
     def get_videos(self, keyword: str):
-        print([video.title for video in self.videos if keyword.lower() in video.title.lower()])
+        return [video.title for video in self.videos if keyword.lower() in video.title.lower()]
 
     def watch_video(self, title: str):
         for video in self.videos:
